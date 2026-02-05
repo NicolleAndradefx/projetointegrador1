@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Story+Script&display=swap%27');
+
+:root {
+    --roxo-claro: #6D76A6;
+    --roxo-escuro: #1b1f5e;
+    ---bege: #d9bd8b; 
+    --roxo: #732257;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    background-color: var(---bege);
+}
+
+.linha-menu {
+    display: flex;
+    align-items: center;
+}
+ 
+.linha-menu span {
+    height: 10px;  
+    flex: 2;      
+}
+ 
+.linha-esq {
+    background-color: var(--roxo);
+    border-radius: 4px;  
+}
+ 
+.linha-dir {
+    background-color: var(--roxo-claro);
+    border-radius: 4px;  
+}
+ 
+.logo-menu {
+    width: 150px;
+    padding-top: 25px;                
+}
+
+ 
+/* TÍTULO */
+.titulo {
+    background-color: var(--roxo-escuro);
+    color: var(---bege);
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 10vw;
+    font-family: 'Story Script', sans-serif;
+}
+ 
+/* CAIXAS */
+.box, .box-sabores {
+    background-color: var(--roxo-claro);
+    margin: 20px auto;
+    width: 85%;
+    padding: 25px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    columns: 2;
+    font-family: 'Story Script', sans-serif;
+}
+ 
+/* ITENS */
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+ 
+/* INPUT PESO */
+.peso {
+    width: 180px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+ 
+/* SABORES */
+.box-sabores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-sabores, label {
+    text-align: center;
+    justify-content: space-around;
+    display: flow-root;
+}
+ 
+/* Concluir */
+.btn{
+  background-color: var(--roxo-escuro);
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  width: 130px;
+  margin: auto;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 15px;
+  font-family: 'Story Script', sans-serif;
+}
+ 
+
+
+/* FOOTER */
+footer {
+    background-color: var(--roxo);
+    padding: 15px 30px;
+}
+ 
+footer .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #d9bd8b;
+    gap: 20px;
+}
+ 
+footer img {
+    width: 70px;
+}
+ 
+footer .icons {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+ 
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 700px) {
+    
+    .footer .content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+ 
+@media (max-width: 500px) {
+    .footer .content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
